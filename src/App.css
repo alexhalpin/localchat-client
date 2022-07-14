@@ -12,11 +12,17 @@
 
 .MessageBox {
   position: relative;
-  height: 40%;
-  width: 20%;
+  height: 80%;
+  width: 60%;
 
-  box-shadow: inset 0 0 0 3px red;
+  overflow: scroll;
+  border: 3px solid orangered;
+
+  /* Hide Scrollbar */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
-.MessageInput {
-  position: relative;
+
+.MessageBox::-webkit-scrollbar {
+  display: none;
 }

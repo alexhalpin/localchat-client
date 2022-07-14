@@ -1,18 +1,17 @@
 import { useState } from 'react';
-import './App.css';
 
 function TextInput(props) {
   //props
   //fieldName
   //onSubmit
 
-  const inputPlaceholder = 'input text';
+  const inputPlaceholder = props.fieldName;
   const [inputText, setInputText] = useState(inputPlaceholder);
 
   var handleSubmit = (e) => {
     e.preventDefault();
     if (inputText !== '') {
-      console.log(`${props.fieldName}: '${inputText}'`);
+      // console.log(`${props.fieldName}: '${inputText}'`);
       props.onSubmit(inputText);
       setInputText('');
     }
