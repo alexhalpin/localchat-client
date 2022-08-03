@@ -7,10 +7,10 @@ function Message(props) {
     <>
       <div className="Container">
         <div className="SubContainer">
-          <div className="User"> {msg.username} </div>
-          <div className="MessageContainer">
-            <div className="Message"> {msg.message} </div>
+          <div className="User" style={{ color: msg.color }}>
+            {msg.username}{' '}
           </div>
+          <div className="Message"> {msg.message} </div>
         </div>
       </div>
     </>

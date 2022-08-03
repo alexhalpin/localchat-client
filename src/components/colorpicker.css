@@ -1,0 +1,46 @@
+.PickerContainer {
+  background-color: transparent;
+  /* width: 100px; */
+  height: 40px;
+
+  margin-right: 20px;
+  overflow: wrap;
+
+  /* box-shadow: inset 0 0 0 3px chartreuse; */
+}
+
+.Row1 {
+  height: 50%;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Row2 {
+  height: 50%;
+  width: 100%;
+  overflow: visible;
+
+  margin-left: 16px;
+  margin-right: 0;
+  /* border: 1px solid green; */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ColorBlock {
+  margin: 0px 6px;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  border-radius: 100vh 100vh;
+}
+
+.ColorBlock:hover {
+  cursor: pointer;
+}

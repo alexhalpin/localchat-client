@@ -1,25 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
 .Container {
   position: relative;
-  /* height: 3rem; */
-  width: calc(100% - 10px);
 
-  margin: 5px;
+  width: 100%;
+
+  margin-top: 1vh;
+  /* this works */
+  /* left: 0;
+  right: 0;
+  margin: 1vh; */
 
   display: flex;
   /* flex-direction: row;
   align-items: center; */
 
-  box-shadow: inset 0 0 0 3px red;
+  /* box-shadow: inset 0 0 0 3px red; */
+
+  background-color: white;
+  border-radius: 10px;
 }
 
 .SubContainer {
   position: relative;
   /* height: 3rem; */
-  width: calc(100% - 10px);
+  width: 95%;
 
-  margin: 10px;
+  margin: 1% 2.5%;
 
-  box-shadow: inset 0 0 0 3px red;
+  /* box-shadow: inset 0 0 0 3px red; */
 }
 
 .User {
@@ -28,22 +39,14 @@
   width: 100%;
   left: 0;
 
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: inline;
+  /* flex-direction: row;
+  align-items: center; */
 
+  font-size: 1rem;
   font-weight: bold;
 
   /* box-shadow: inset 0 0 0 3px green; */
-}
-
-.MessageContainer {
-  position: relative;
-  padding-bottom: 10px;
-
-  display: flex;
-
-  box-shadow: inset 0 0 0 3px blue;
 }
 
 .Message {
@@ -55,5 +58,7 @@
   display: inline;
   overflow-wrap: break-word;
 
-  box-shadow: inset 0 0 0 3px blueviolet;
+  font-size: 1rem;
+
+  /* box-shadow: inset 0 0 0 3px blueviolet; */
 }
